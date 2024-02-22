@@ -1,0 +1,54 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff; /* Color de texto */
+    background-color: #212cff; /* Color de fondo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centramos verticalmente */
+    align-items: center; /* Centramos horizontalmente */
+    min-height: 100vh;
+}
+
+h1, p {
+    color: #ffffff; /* Color de texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+#video-container {
+    text-align: center;
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    margin-top: 20px; /* Agregamos un poco de espacio arriba */
+}
+
+video {
+    width: calc(100% * 2 / 3); /* Tamaño ajustado al 2/3 */
+}
+
+button, input[type="number"] {
+    background-color: #ffffff; /* Color de fondo de botones e input */
+    color: #202020; /* Color de texto de botones e input */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif; /* Fuente Poppins */
+}
+
+button {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Animación de palpitación */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse-animation {
+    animation: pulse 0.3s ease infinite alternate;
+}
